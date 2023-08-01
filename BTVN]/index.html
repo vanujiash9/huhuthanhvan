@@ -1,0 +1,174 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+// bài 1
+       var a = prompt('a')
+       var b = prompt('b')
+     if ( a% b === 0){
+        alert(' a chia het cho b')
+     }
+     else{
+        alert('a khong chia het cho b')
+     }
+// bài 2
+          
+     var tuoicuahs = parseInt(prompt ('nhập tuổi'))
+     if ( tuoicuahs <= 0 ){
+        alert('nhập tuổi lớn hơn 0')
+     }
+      else{
+        if( tuoicuahs < 16){
+         alert('không đủ tuổi vào 10')
+        }else{
+         alert('đủ tuổi vào 10')
+        }
+     }
+
+//bài 3
+
+     var p = parseInt(prompt ('nhập số nguyên'))
+     if( p > 0){
+        alert(' số đó là số lớn hơn không')
+     }else if (p<0){
+        alert(' số đó là số nhỏ hơn không')
+     }
+
+// bài 4
+
+     var x = parseInt(prompt('nhập số nguyên x'))
+     var y = parseInt(prompt('nhập số nguyên y'))
+     var z = parseInt(prompt('nhập số nguyên z'))
+     if ( x > y && x > z){
+        alert(' giá trị lớn nhất là }' +x)
+     }
+     else if( y > x && y > z){
+        alert(' giá trị lớn nhất là' +y)
+     }
+     else if ( z > y && z > x) {
+        alert(' giá trị lớn nhất là ' +z)
+     }
+
+// bài 5
+
+     var diembaikiemtra = parseFloat(prompt('nhập điểm bài kiểm tra'))
+     var diembaigiuaki = parseFloat(prompt('nhập điểm bài giua ki'))
+     var diembaicuoiki = parseFloat(prompt('nhập điểm bài cuoi kì'))
+     var dtb = (diembaikiemtra + diembaigiuaki*2 + diembaicuoiki*3)/7
+    
+   if( dtb && diembaicuoiki && diembaigiuaki && diembaikiemtra <= 0){
+      alert('nhập lại điểm lớn hơn 0')
+   } else{
+     if (dtb >= 8){
+      alert('HSG')
+     }
+     else if(dtb >=6.5){
+      alert('HSK')
+     }
+     else if( dtb >= 5){
+      alert('HSTB')
+     }
+     else{
+      alert('HSY')
+     }
+   }
+
+//bai 4
+      var cd =parseFloat(prompt('nhập chiều dài'))
+      var cr= parseFloat(prompt('nhập chiều rộng'))
+      var dientich = cd*cr
+      alert(dientich)
+
+//bai 5
+      var canhke1 = parseInt('nhập cạnh')
+      var canhke2 = parseFloat('nhập cạnh ')
+      var S= 1/2 * canhke1 * canhke2
+      if( canhke1 && canhke2 && S <=0){
+         alert('nhập lại cạnh')
+      }else{
+         alert(S)
+      }
+
+
+// bài 6
+// ax + b=0
+ var a =prompt(' nhập a')
+ var b = prompt ('nhập b')
+ if( a===0){
+   if(b===0){
+      alert('pt vô số nghiệm')
+   }
+ }else{
+   var x=-b/a
+   alert('giá trị của x là:' +x)
+ }
+
+
+
+// bài 7
+//ax^2 + bx + c =0
+
+   var a =prompt(' nhập a')
+   var b = prompt ('nhập b')
+   var c = prompt('nhập c')
+if( a ===0){
+   if(b===0){
+      if(c===0){
+         alert('pt có vô số nghiệm')
+      } 
+      else {
+         alert('pt vô nghiệm')
+      }
+   }else{
+      alert('pt có một nghiệm duy nhất x =' -b/c)
+   }
+}else{
+   delta = b*b - 4*a*c
+   if( delta >0){
+      x1 = (-b-sqrt(delta))/(2*a)
+      x2 =(-b + sqrt(delta))/(2*a)
+      alert('phương trình có 2 nghiệm phân biệt' +x1, x2)
+   }
+   else if( delta ===0){
+      x1=x2=-b/(2*a)
+      alert(' pt có nghiệm kép' +x1, x2)
+   }
+   else{
+      alert('pt vô nghiệm')
+   }
+   
+}
+
+
+//bài 8
+
+var tuoi = parseInt(prompt)
+if( tuoi >= 120 && tuoi < 0){
+   alert('vui lòng nhập lại tuổi lớn hơn 0 bé hơn 120')
+}else{
+   alert('đây là tuổi của một người')
+}
+//bài 9
+
+var a = parseFloat(prompt('Nhập cạnh a'))
+var b = parseFloat(prompt('Nhập cạnh b'))
+var c = parseFloat(prompt('Nhập cạnh c'))
+
+if(a < 0 || b <0 || c <0){
+   alert('không phải ba cạnh tam giác')
+}
+else{
+   if( a + b < 0 || b + c < 0 || c +a < 0){
+      alert('không phải ba cạnh tam giác')
+   }else{
+      alert('là ba cạnh tam giác')
+   }
+}
+
+ </script>
+</body>
+</html>
